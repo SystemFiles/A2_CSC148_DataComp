@@ -21,8 +21,8 @@
       <file leaf-file-name="huffman.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/huffman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="365" column="4" lean-forward="false" selection-start-line="365" selection-start-column="4" selection-end-line="365" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -31,7 +31,7 @@
       <file leaf-file-name="nodes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
+            <state relative-caret-position="540">
               <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="63" />
               <folding />
             </state>
@@ -41,8 +41,8 @@
       <file leaf-file-name="test_huffman_properties.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_huffman_properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -97,6 +97,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.6.0 (/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A2_CSC148_DataComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="A2_CSC148_DataComp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -107,46 +121,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="huf&#9;FILE&#9;file:///Users/bensykes/Documents/My Pictures/Personal/CSC148/Assignements/A2/A2_CSC148_DataComp/huffman.py&#10;huff&#9;FILE&#9;file:///Users/bensykes/Documents/My Pictures/Personal/CSC148/Assignements/A2/A2_CSC148_DataComp/huffman.py" />
   </component>
-  <component name="RunManager" selected="Python tests.Doctest avg_length">
-    <configuration default="false" name="Doctest make_freq_dict" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="A2_CSC148_DataComp" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huffman.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="make_freq_dict" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest huffman_tree" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="A2_CSC148_DataComp" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huffman.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="huffman_tree" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Doctest tree_to_bytes">
     <configuration default="false" name="Doctest get_codes" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -198,6 +175,47 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huffman.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="avg_length" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestCompressionCode.test_generate_compressed" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="A2_CSC148_DataComp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_huffman_properties.py" />
+      <option name="CLASS_NAME" value="TestCompressionCode" />
+      <option name="METHOD_NAME" value="test_generate_compressed" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctest tree_to_bytes" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="A2_CSC148_DataComp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huffman.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="tree_to_bytes" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_FUNCTION" />
       <option name="PATTERN" value="" />
@@ -339,24 +357,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest make_freq_dict" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest huffman_tree" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest get_codes" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest number_nodes" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest avg_length" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest get_codes" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest number_nodes" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest avg_length" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestCompressionCode.test_generate_compressed" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest tree_to_bytes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest avg_length" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest number_nodes" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest get_codes" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest huffman_tree" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest make_freq_dict" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest tree_to_bytes" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestCompressionCode.test_generate_compressed" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest avg_length" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest number_nodes" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest get_codes" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -369,21 +390,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 45m 13s.xml">
-      <configuration name="Doctest avg_length" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 45m 38s.xml">
-      <configuration name="Doctest avg_length" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 45m 55s.xml">
-      <configuration name="Doctest avg_length" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 46m 47s.xml">
-      <configuration name="Doctest avg_length" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 48m 41s.xml">
-      <configuration name="Doctest avg_length" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 49m 08s.xml">
       <configuration name="Doctest avg_length" configurationId="tests" />
     </history-entry>
@@ -396,22 +402,37 @@
     <history-entry file="Doctest_avg_length - 2017.03.23 at 13h 55m 18s.xml">
       <configuration name="Doctest avg_length" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_number_nodes - 2017.03.23 at 13h 35m 38s.xml">
-      <configuration name="Doctest number_nodes" configurationId="tests" />
+    <history-entry file="Doctest_tree_to_bytes - 2017.03.23 at 14h 32m 18s.xml">
+      <configuration name="Doctest tree_to_bytes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_tree_to_bytes - 2017.03.23 at 14h 32m 39s.xml">
+      <configuration name="Doctest tree_to_bytes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_tree_to_bytes - 2017.03.23 at 14h 33m 42s.xml">
+      <configuration name="Doctest tree_to_bytes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_tree_to_bytes - 2017.03.23 at 14h 34m 47s.xml">
+      <configuration name="Doctest tree_to_bytes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctest_tree_to_bytes - 2017.03.23 at 14h 35m 23s.xml">
+      <configuration name="Doctest tree_to_bytes" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestCompressionCode_test_generate_compressed - 2017.03.23 at 14h 25m 37s.xml">
+      <configuration name="Unittest TestCompressionCode.test_generate_compressed" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1228" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25434962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34014598" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -428,12 +449,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/huffman.py</url>
-          <line>156</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -552,26 +567,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/huffman.py">
+    <entry file="file://$PROJECT_DIR$/test_huffman_properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
+        <state relative-caret-position="540">
           <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_huffman_properties.py">
+    <entry file="file://$PROJECT_DIR$/huffman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="792">
+          <caret line="365" column="4" lean-forward="false" selection-start-line="365" selection-start-column="4" selection-end-line="365" selection-end-column="4" />
           <folding />
         </state>
       </provider>

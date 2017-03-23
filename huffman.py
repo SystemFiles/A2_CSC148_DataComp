@@ -109,11 +109,11 @@ def get_codes(tree):
     >>> d == {3: "0", 2: "1"}
     True
     """
-    
+
     d = {}
     if tree.is_leaf():
         return d
-    
+
     if tree.left.is_leaf():
         d[tree.left.symbol] = '0'
     elif not tree.left.is_leaf():
@@ -121,7 +121,7 @@ def get_codes(tree):
         for key in temp1.keys():
             temp1[key] = '0' + temp1[key]
         d.update(temp1)
-        
+
     if tree.right.is_leaf():
         d[tree.right.symbol] = '1'
     elif not tree.right.is_leaf():
@@ -161,6 +161,7 @@ def number_nodes(tree):
             traverse_node(node.right, (x + 1), max)
             max += 1
             tree.number = max + 1
+
         traverse_node(tree, 0, 0)
 
     return traverse(tree)
@@ -239,7 +240,27 @@ def tree_to_bytes(tree):
     [0, 3, 0, 2, 1, 0, 0, 5]
     """
 
-    # todo
+    lst = []
+
+    def traverse_tree(node):
+        if not node:
+            return
+        if node.left.is_leaf():
+            lst.append(0)
+            lst.append(node.left.symbol)
+        else:
+            traverse_tree(node.left)
+        if node.right.is_leaf():
+            lst.append(0)
+            lst.append(node.right.symbol)
+        else:
+            traverse_tree(node.right)
+        if not node.is_leaf():
+            lst.append(1)
+            lst.append(node.number)
+
+    traverse_tree(tree)
+    return bytes(lst[:-2])
 
 
 def num_nodes_to_bytes(tree):
@@ -308,6 +329,7 @@ def generate_tree_general(node_lst, root_index):
     HuffmanNode(12, None, None)), \
     HuffmanNode(None, HuffmanNode(5, None, None), HuffmanNode(7, None, None)))
     """
+
     # todo
 
 
@@ -328,6 +350,7 @@ def generate_tree_postorder(node_lst, root_index):
     HuffmanNode(7, None, None)), \
     HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
     """
+
     # todo
 
 
@@ -339,6 +362,7 @@ def generate_uncompressed(tree, text, size):
     @param int size: how many bytes to decompress from text.
     @rtype: bytes
     """
+
     # todo
 
 
@@ -354,9 +378,9 @@ def bytes_to_nodes(buf):
     lst = []
     for i in range(0, len(buf), 4):
         l_type = buf[i]
-        l_data = buf[i+1]
-        r_type = buf[i+2]
-        r_data = buf[i+3]
+        l_data = buf[i + 1]
+        r_type = buf[i + 2]
+        r_data = buf[i + 3]
         lst.append(ReadNode(l_type, l_data, r_type, r_data))
     return lst
 
@@ -415,11 +439,14 @@ def improve_tree(tree, freq_dict):
     """
     # todo
 
+
 if __name__ == "__main__":
     import python_ta
+
     python_ta.check_all(config="huffman_pyta.txt")
     # TODO: Uncomment these when you have implemented all the functions
     import doctest
+
     doctest.testmod()
 
     import time
