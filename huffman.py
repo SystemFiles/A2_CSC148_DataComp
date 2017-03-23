@@ -354,8 +354,8 @@ def generate_tree_general(node_lst, root_index):
 
     return tree
 
-def generate_tree_postorder(node_lst, root_index):
 
+def generate_tree_postorder(node_lst, root_index):
     """ Return the root of the Huffman tree corresponding
     to node_lst[root_index].
 
@@ -368,12 +368,36 @@ def generate_tree_postorder(node_lst, root_index):
     >>> lst = [ReadNode(0, 5, 0, 7), ReadNode(0, 10, 0, 12), \
     ReadNode(1, 0, 1, 0)]
     >>> generate_tree_postorder(lst, 2)
-    HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \ 
-    HuffmanNode(7, None, None)), \
-    HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
+    HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \
+    HuffmanNode(7, None, None)), HuffmanNode(None, \
+    HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
     """
 
-    # todo
+    tree = HuffmanNode()
+    if len(node_lst) == 1:
+        tree.left = HuffmanNode(node_lst[0].l_data)
+        tree.right = HuffmanNode(node_lst[0].r_data)
+        return tree
+
+    RN = node_lst[root_index]
+
+    if RN.l_type == 1:
+        if RN.l_data == 0:
+            tree.right = generate_tree_general([node_lst[1]], root_index)
+        else:
+            tree.left = generate_tree_general([node_lst[0]], root_index)
+    else:
+        tree.left = HuffmanNode(RN.l_data)
+
+    if RN.r_type == 1:
+        if RN.r_data == 1:
+            tree.right = generate_tree_general([node_lst[1]], root_index)
+        else:
+            tree.left = generate_tree_general([node_lst[0]], root_index)
+    else:
+        tree.right = HuffmanNode(RN.r_data)
+
+    return tree
 
 
 def generate_uncompressed(tree, text, size):
