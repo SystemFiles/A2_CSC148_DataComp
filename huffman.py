@@ -66,16 +66,13 @@ def make_freq_dict(text):
     >>> d == {65: 1, 66: 2, 67: 1}
     True
     """
-
-    result = {}
-
-    for ch in text:
-        if ch in result:
-            result[ch] += 1
+    dic = {}
+    for char in text:
+        if not char in dic.keys():
+            dic[char] = 1
         else:
-            result[ch] = 1
-    return result
-
+            dic[char] += 1
+    return dic
 
 
 def huffman_tree(freq_dict):
@@ -91,16 +88,14 @@ def huffman_tree(freq_dict):
     >>> result2 = HuffmanNode(None, HuffmanNode(2), HuffmanNode(3))
     >>> t == result1 or t == result2
     True
-
     """
-
-    t = HuffmanNode()
-    for symb in freq_dict.keys():
-        if not t.left:
-            t.left = HuffmanNode(symb)
-        elif not t.right:
-            t.right = HuffmanNode(symb)
-    return t
+    tree = HuffmanNode(None)
+    for key in freq_dict.keys():
+        if not tree.left:
+            tree.left = HuffmanNode(key)
+        elif not tree.right:
+            tree.right = HuffmanNode(key)
+    return tree
 
 
 def get_codes(tree):
@@ -111,23 +106,31 @@ def get_codes(tree):
 
     >>> tree = HuffmanNode(None, HuffmanNode(3), HuffmanNode(2))
     >>> d = get_codes(tree)
-    >>> d == {3: '0', 2: '1'}
+    >>> d == {3: "0", 2: "1"}
     True
     """
+    
+    d = {}
+    if tree.is_leaf():
+        return d
+    
+    if tree.left.is_leaf():
+        d[tree.left.symbol] = '0'
+    elif not tree.left.is_leaf():
+        temp1 = get_codes(tree.left)
+        for key in temp1.keys():
+            temp1[key] = '0' + temp1[key]
+        d.update(temp1)
+        
+    if tree.right.is_leaf():
+        d[tree.right.symbol] = '1'
+    elif not tree.right.is_leaf():
+        temp2 = get_codes(tree.right)
+        for key in temp2.keys():
+            temp2[key] = '1' + temp2[key]
+        d.update(temp2)
 
-    if not tree.left and not tree.right:
-        return tree.symbol
-    else:
-        d = {}
-        if tree.left:
-            # d[get_codes(tree.left)] = todo: Figure out how to get
-            pass
-        if tree.right:
-            # d[get_codes(tree.right)] =
-            pass
-    print(d)
     return d
-
 
 
 def number_nodes(tree):
@@ -148,7 +151,19 @@ def number_nodes(tree):
     >>> tree.number
     2
     """
-    # todo
+
+    def traverse(t):
+        def traverse_node(node, x, max):
+            if not node:
+                return
+            node.number = x
+            traverse_node(node.left, x, max)
+            traverse_node(node.right, (x + 1), max)
+            max += 1
+            tree.number = max + 1
+        traverse_node(tree, 0, 0)
+
+    return traverse(tree)
 
 
 def avg_length(tree, freq_dict):
@@ -166,7 +181,15 @@ def avg_length(tree, freq_dict):
     >>> avg_length(tree, freq)
     1.9
     """
-    # todo
+
+    l = 0
+    divisor = 0
+
+    for key in freq_dict.keys():
+        l += (len((get_codes(tree)[key])) * freq_dict[key])
+        divisor += freq_dict[key]
+
+    return l / divisor
 
 
 def generate_compressed(text, codes):
@@ -186,7 +209,12 @@ def generate_compressed(text, codes):
     >>> [byte_to_bits(byte) for byte in result]
     ['10111001', '10000000']
     """
-    # todo
+    byte = ''
+    for i in text:
+        byte += codes[i]
+    while len(byte) < 8:
+        byte += '0'
+    return bytes(int(byte))
 
 
 def tree_to_bytes(tree):
@@ -210,6 +238,7 @@ def tree_to_bytes(tree):
     >>> list(tree_to_bytes(tree))
     [0, 3, 0, 2, 1, 0, 0, 5]
     """
+
     # todo
 
 
@@ -276,8 +305,8 @@ def generate_tree_general(node_lst, root_index):
     ReadNode(1, 1, 1, 0)]
     >>> generate_tree_general(lst, 2)
     HuffmanNode(None, HuffmanNode(None, HuffmanNode(10, None, None), \
-HuffmanNode(12, None, None)), \
-HuffmanNode(None, HuffmanNode(5, None, None), HuffmanNode(7, None, None)))
+    HuffmanNode(12, None, None)), \
+    HuffmanNode(None, HuffmanNode(5, None, None), HuffmanNode(7, None, None)))
     """
     # todo
 
@@ -295,9 +324,9 @@ def generate_tree_postorder(node_lst, root_index):
     >>> lst = [ReadNode(0, 5, 0, 7), ReadNode(0, 10, 0, 12), \
     ReadNode(1, 0, 1, 0)]
     >>> generate_tree_postorder(lst, 2)
-    HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \
-HuffmanNode(7, None, None)), \
-HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
+    HuffmanNode(None, HuffmanNode(None, HuffmanNode(5, None, None), \ 
+    HuffmanNode(7, None, None)), \
+    HuffmanNode(None, HuffmanNode(10, None, None), HuffmanNode(12, None, None)))
     """
     # todo
 
@@ -390,8 +419,8 @@ if __name__ == "__main__":
     import python_ta
     python_ta.check_all(config="huffman_pyta.txt")
     # TODO: Uncomment these when you have implemented all the functions
-    # import doctest
-    # doctest.testmod()
+    import doctest
+    doctest.testmod()
 
     import time
 
