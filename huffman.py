@@ -110,17 +110,17 @@ def huffman_tree(freq_dict):
         del frequency[biggest_key]
         key_list.remove(biggest_key)
         biggest_key = find_biggest_key(key_list)
-    print('temp', temp)
+    # print('temp', temp)
 
     nodes_list = []
     while len(temp) > 0:
         nodes_list.append(HuffmanNode(temp.pop()))
     nodes_list.reverse()
-    print('nodeslist', nodes_list)
+    # print('nodeslist', nodes_list)
 
     while True:
         first_node = nodes_list.pop()
-        if nodes_list == []:
+        if not nodes_list:
             return first_node
         second_node = nodes_list.pop()
         parent_node = HuffmanNode(None, first_node, second_node)
@@ -131,6 +131,7 @@ def get_codes(tree):
     """ Return a dict mapping symbols from tree rooted at HuffmanNode to codes.
     @param HuffmanNode tree: a Huffman tree rooted at node 'tree'
     @rtype: dict(int,str)
+
     >>> tree = HuffmanNode(None, HuffmanNode(3), HuffmanNode(2))
     >>> d = get_codes(tree)
     >>> d == {3: "0", 2: "1"}
